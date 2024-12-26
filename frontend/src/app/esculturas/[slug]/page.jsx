@@ -1,5 +1,5 @@
 "use client";
-import PlantillaPage from "../../reactComponents/componentes/plantillaEscultura.jsx";
+import PlantillaEscultura from "../../componentes/Escultura/PlantillaEscultura";
 import { getEscultura } from "../../lib/getElement.js";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <section>
       <Suspense fallback={<p>Cargando...</p>}>
-        <PlantillaPage
+        <PlantillaEscultura
           titulo={escultura.nombre}
           descripcion={escultura.descripcion}
           etapa1={escultura.imagen_antes}

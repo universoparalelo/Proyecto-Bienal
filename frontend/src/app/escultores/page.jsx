@@ -1,8 +1,8 @@
-import ImagenEscultores from "../reactComponents/componentes/imagenEscultores";
-import BotonVolver from "../reactComponents/componentes/BotonVolver";
+import Escultor from "../componentes/Escultor";
+import BotonVolver from "../componentes/BotonVolver";
 import { getEscultores } from "../lib/getElementos";
 import styles from "./page.module.css";
-import { Pagination } from "../reactComponents/componentes/Pagination";
+import { Pagination } from "../componentes/Pagination";
 
 const PAGE_SIZE = 6;
 
@@ -22,7 +22,7 @@ export default async function EscultoresPage({ searchParams }) {
       </section>
       <div className={styles.escultoresPortada}>
         {escultores.map((escultor) => (
-          <ImagenEscultores
+          <Escultor
             nombre={escultor.nombre + " " + escultor.apellidos}
             foto={escultor.imagen}
             bandera={escultor.bandera}

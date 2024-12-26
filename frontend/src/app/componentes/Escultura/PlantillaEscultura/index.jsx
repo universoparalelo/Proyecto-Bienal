@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from "../estilos/plantillaEscultura.module.css";
-import BotonVolver from "./BotonVolver";
+import styles from "./plantillaEscultura.module.css";
+import BotonVolver from "../../BotonVolver";
 
-export default function PlantillaPage({
+export default function PlantillaEscultura({
   titulo,
   descripcion,
   etapa1,

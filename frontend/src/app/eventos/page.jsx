@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
-import Carrousel from '../reactComponents/componentes/Carrousel';
-import BotonVolver from "../reactComponents/componentes/BotonVolver";
+import Carrousel from '../componentes/Carrousel';
+import BotonVolver from "../componentes/BotonVolver";
 import Link from "next/link";
 import { getEventos } from "../lib/getElementos";
 import { filtrarEventos } from "../lib/filtrarEsculturas";
@@ -69,10 +69,9 @@ export default function AgendaEventos() {
   return (
     <>
       <BotonVolver retorno={"/"} />
-      <main className={styles.cuerpoEventos}> 
+      <section className={styles.cuerpoEventos}> 
         <h1 className={styles.titulo}>Eventos recientes</h1>
         <Carrousel eventosRec={eventosRec}></Carrousel>
-
 
         <div className={styles.calendarContainer}>
           <div className={styles.calendar}>
@@ -106,7 +105,7 @@ export default function AgendaEventos() {
             </div>
           </div>
         </div>
-      </main>
+      </section>
     </>
   );
 }

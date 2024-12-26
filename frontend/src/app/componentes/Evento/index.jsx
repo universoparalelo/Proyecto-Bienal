@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "../estilos/plantillaEvento.module.css";
+import styles from "./plantillaEvento.module.css";
 import pin_drop from "../../../../public/pin_drop.svg";
 import Image from "next/image";
 
@@ -12,7 +12,7 @@ function formatearFecha(fecha) {
   return `${día} de ${meses[parseInt(mes, 10) - 1]}`;
 }
 
-export default function Page({
+export default function Evento({
   nombre,
   lugar,
   fecha,

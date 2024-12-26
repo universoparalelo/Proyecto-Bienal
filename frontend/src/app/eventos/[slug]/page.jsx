@@ -1,9 +1,9 @@
 "use client";
-import PlantillaEvento from "../../reactComponents/componentes/plantillaEvento";
+import Evento from "../../componentes/Evento";
 import { getEvento } from "../../lib/getElement";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import BotonVolver from "../../reactComponents/componentes/BotonVolver";
+import BotonVolver from "../../componentes/BotonVolver";
 
 export default function Page() {
   const pathname = usePathname();
@@ -24,21 +24,21 @@ export default function Page() {
     return <p>Cargando...</p>;
   } else {
     return (
-        <section>
+        <article>
           <BotonVolver retorno={"/eventos/"} />
-            <PlantillaEvento
-                nombre={evento.nombre}
-                lugar={evento.lugar}
-                fecha={evento.fecha}
-                hora_inicio={evento.hora_inicio}
-                hora_fin={evento.hora_fin}
-                fecha_finalizacion={evento.fecha_finalizacion}
-                descripcion={evento.descripcion}
-                foto={evento.imagen}
-                tematica={evento.tematica}
-                esculturas={esculturas}
+            <Evento
+              nombre={evento.nombre}
+              lugar={evento.lugar}
+              fecha={evento.fecha}
+              hora_inicio={evento.hora_inicio}
+              hora_fin={evento.hora_fin}
+              fecha_finalizacion={evento.fecha_finalizacion}
+              descripcion={evento.descripcion}
+              foto={evento.imagen}
+              tematica={evento.tematica}
+              esculturas={esculturas}
             />
-        </section>
+        </article>
         
     );
   }

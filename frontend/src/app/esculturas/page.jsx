@@ -1,8 +1,8 @@
-import ImagenArte from "../reactComponents/componentes/imageArte.jsx";
-import BotonVolver from "../reactComponents/componentes/BotonVolver.jsx";
+import Escultura from "../componentes/Escultura";
+import BotonVolver from "../componentes/BotonVolver/index.jsx";
 import styles from "./page.module.css";
 import { getEsculturas } from "../lib/getElementos";
-import { Pagination } from "../reactComponents/componentes/Pagination.jsx";
+import { Pagination } from "../componentes/Pagination/index.jsx";
 
 const PAGE_SIZE = 6;
 
@@ -29,7 +29,7 @@ export default async function ArtPage({ searchParams }) {
         {esculturas.map((escultura) => (
           <div key={escultura.documentId} className={styles.esculturaCard}>
             <h3 className={styles.esculturaTitulo}>{escultura.nombre}</h3>
-            <ImagenArte
+            <Escultura
               className={styles.esculturaImagen}
               imagen={escultura.imagen}
               enlace={"/esculturas/" + escultura.documentId}

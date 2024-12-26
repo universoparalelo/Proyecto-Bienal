@@ -1,9 +1,9 @@
 "use client";
 
-import ImgPredio from "./imagenPredio.jsx";
-import predio from "/public/plano-predio.svg";
+import predio from "../../../../../public/plano-predio.svg";
 import { useState } from "react";
-import "../estilos/infoExtra.css";
+import "./infoExtra.css";
+import Image from "next/image";
 
 export default function InfoExtra() {
   const [active, setActive] = useState("info");
@@ -87,7 +87,13 @@ export default function InfoExtra() {
         className={`predio ${active === "predio" ? "visible" : "oculto"}`}
         id="predio"
       >
-        <ImgPredio imagen={predio} dimensions={200} />
+        <Image
+          className="predio__imagen"
+          src={predio}
+          alt="imagen del predio"
+          width={200}
+          height={200}
+        />
       </div>
     </>
   );

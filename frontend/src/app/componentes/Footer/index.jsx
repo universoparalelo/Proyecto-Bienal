@@ -1,5 +1,5 @@
-import SocialMediaFooter from "./socialMedia";
-import "../estilos/globals.css";
+import SocialMediaFooter from "./SocialMedia";
+import "../../globals.css";
 import Link from "next/link";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;

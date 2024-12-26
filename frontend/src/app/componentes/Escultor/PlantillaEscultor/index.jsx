@@ -1,8 +1,8 @@
 import Image from "next/image";
-import BotonVolver from "./BotonVolver";
-import styles from "../estilos/plantillaEscultores.module.css";
+import BotonVolver from "../../BotonVolver";
+import styles from "./plantillaEscultores.module.css";
 
-export default function PlantillaEscultoresPage({
+export default function PlantillaEscultor({
   foto,
   bandera,
   nombre,

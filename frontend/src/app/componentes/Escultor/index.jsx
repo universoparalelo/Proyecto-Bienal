@@ -1,8 +1,8 @@
-import style from "../estilos/imagenEscultores.module.css";
+import style from "./imagenEscultores.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ImagenEscultores({ nombre, foto, bandera, enlace }) {
+export default function Escultor({ nombre, foto, bandera, enlace }) {
   return (
     <>
       <Link

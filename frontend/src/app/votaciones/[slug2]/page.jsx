@@ -1,6 +1,5 @@
 "use client";
-import Link from "next/link";
-import BotonVolver from "@/app/reactComponents/componentes/BotonVolver";
+import BotonVolver from "@/app/componentes/BotonVolver";
 import styles from "./page.module.css";
 import { getEscultura } from "../../lib/getElement";
 import { postVote, postVoteUserRegister } from "../../lib/postVote";

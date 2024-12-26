@@ -1,8 +1,8 @@
 
 export default function Container({ children }) {
   return (
-    <div>
+    <main>
       {children}
-    </div>
+    </main>
   );
 }

@@ -3,9 +3,9 @@ import Facebook from "/public/facebook.svg";
 import Instagram from "/public/instagram.svg";
 import Twitter from "/public/twitter.svg";
 import WhatsApp from "/public/whatsapp.svg";
-import "../estilos/globals.css";
+import "../../../globals.css";
 
-export default function SocialMediaFooter() {
+export default function SocialMedia() {
   return (
     <>
       <h4 className="footerTitleSocial">Síganos</h4>

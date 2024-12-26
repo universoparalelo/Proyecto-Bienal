@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
-import "./reactComponents/estilos/globals.css";
-import { Footer } from "./reactComponents/componentes/Footer";
-import { Header } from "./reactComponents/componentes/Header";
-import Container from "./reactComponents/componentes/Container";
+import "./globals.css";
+import { Footer } from "./componentes/Footer";
+import { Header } from "./componentes/Header";
+import Container from "./componentes/Container";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -20,7 +20,7 @@ export const metadata = {
   description: "Descubre la Bienal de Escultura",
 };
 
-export default function RootLayout({ children }) {
+export default function Page({ children }) {
   return (
     <html lang="en">
       <body className={`${geistMono.variable} ${geistSans.variable}`}>
