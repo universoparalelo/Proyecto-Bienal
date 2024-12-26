@@ -4,7 +4,7 @@ import Link from "next/link";
 import "../estilos/globals.css";
 import AuthContainer from "./AuthContainer";
 
-export function RootHeader() {
+export function Header() {
   return (
     <header className="rootHeader">
       <Image

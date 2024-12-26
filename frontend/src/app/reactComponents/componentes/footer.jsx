@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
-export function RootFooter() {
+export function Footer() {
   return (
     <footer className="rootFooter">
       <SocialMediaFooter />
