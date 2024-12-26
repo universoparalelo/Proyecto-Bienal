@@ -9,6 +9,12 @@
     position: relative;  /* Esto es importante para posicionar las flechas */
     max-width: 900px;
   }
+
+  @media (max-width: 967px) {
+    .carouselContainer {
+      max-width: 500px;
+    }
+  }
   
   .carousel {
     display: flex;

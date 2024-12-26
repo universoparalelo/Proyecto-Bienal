@@ -50,12 +50,10 @@ export default function Page() {
   };
   const validarURL = async () => {
     if (codigoAdicional) {
-      console.log("codigoAdicional", codigoAdicional);
 
       const infoToken = await getToken(esculturaId);
       const codigoAlmacenado = infoToken ? infoToken.token : null;
 
-      console.log("codigoAlmacenado", codigoAlmacenado);
       if (codigoAdicional !== codigoAlmacenado) {
         console.error("URL no válida");
         setUrlValida(false);
@@ -88,7 +86,7 @@ export default function Page() {
 
   if (!urlValida) {
     // Mostrar mensaje de URL no válida
-    return <p>URL no válida</p>;
+    return <p>URL no válida. Si quieres votar sin registrarte debes escanear el QR. Sino puedes registrarte y votar.</p>;
   } else {
     return (
       <>
@@ -163,7 +161,7 @@ export default function Page() {
             <img
               className={styles.votacionCardImagen}
               src={escultura.imagen_despues}
-              alt=""
+              alt={escultura.nombre}
             />
           </div>
         </div>

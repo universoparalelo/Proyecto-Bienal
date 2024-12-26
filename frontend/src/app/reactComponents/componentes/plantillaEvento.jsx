@@ -25,7 +25,7 @@ export default function Page({
   esculturas,
 }) {
   const fecha_formateada = formatearFecha(fecha);
-
+  
   return (
     <>
     <div className={styles.eventContainer}>

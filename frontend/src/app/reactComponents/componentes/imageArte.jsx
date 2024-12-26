@@ -15,7 +15,7 @@ export default function ImagenArte({
       <Image
         className={styles.galleryImagen}
         src={imagen}
-        alt="Escultura"
+        alt={`imagen de ${titulo}`}
         width={500}
         height={500}
       />

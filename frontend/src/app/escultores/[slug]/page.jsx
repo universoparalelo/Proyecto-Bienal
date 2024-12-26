@@ -13,7 +13,6 @@ export default function Page() {
     const getSculp = async () => {
       const escult = await getEscultor(pathname.split("/")[2]);
       setEscultor(escult); // Guardamos el resultado en el estado
-      console.log(escult);
     };
 
     getSculp();

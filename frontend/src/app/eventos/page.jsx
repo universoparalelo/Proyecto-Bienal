@@ -33,11 +33,9 @@ export default function AgendaEventos() {
       try {
         const eventos = await getEventos(); 
         setEvents(eventos); 
-        console.log(eventos)
         const fecha = getCurrentDateFormatted();
         const evrec = await filtrarEventos(fecha);
         setEvRc(evrec.eventos);
-        console.log(evrec.eventos)
       } catch (error) {
         console.error("Error al obtener los eventos:", error);
       }

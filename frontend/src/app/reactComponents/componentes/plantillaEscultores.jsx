@@ -12,7 +12,6 @@ export default function PlantillaEscultoresPage({
   proyNombre,
   proyImagen,
 }) {
-  console.log(bandera);
   return (
     <>
       <BotonVolver retorno={"/escultores"} />

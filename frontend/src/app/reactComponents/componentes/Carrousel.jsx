@@ -8,7 +8,6 @@ function formatearFecha(fecha) {
       'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio',
       'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'
   ];
-  console.log(fecha)
   const [año, mes, día] = fecha.split('-');
   return `${día} de ${meses[parseInt(mes, 10) - 1]}`;
 }

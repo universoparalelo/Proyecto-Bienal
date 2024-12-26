@@ -20,7 +20,6 @@ export function getEsculturas(pageSize, page){
         .then(res=> {
             const {data, meta} = res;
             const esculturas =  data.map(escultura=>{
-                console.log(escultura)
                 const {documentId, nombre} = escultura;
                 const imagen = escultura.img_despues;
                 const tematica = escultura.tematica.nombre;

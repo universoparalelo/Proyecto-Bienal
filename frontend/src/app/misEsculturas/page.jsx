@@ -35,7 +35,6 @@ export default function Page() {
             try {
                 const escultu = await getSculptFromUser(localStorage.getItem('jwt'));
                 setEsculturas(escultu); // Guardamos el resultado en el estado
-                console.log(escultu);
 
                 // Generar todas las URLs en paralelo
                 const tempUrls = await Promise.all(

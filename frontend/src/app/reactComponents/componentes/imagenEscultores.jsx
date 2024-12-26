@@ -17,13 +17,14 @@ export default function ImagenEscultores({ nombre, foto, bandera, enlace }) {
               src={bandera}
               width={50}
               height={50}
+              alt={nombre}
             />
             <h1 className={style.escultorNombre}>{nombre}</h1>
           </div>
           <Image
             className={style.escultorFoto}
             src={foto}
-            alt="navegacion"
+            alt={`foto de ${nombre}`}
             width={500}
             height={500}
           />

@@ -9,7 +9,7 @@ export default function ImagenesRedireccion({ titulo, imagen, enlace }) {
         <Image
           className={style.rootNavImagen}
           src={imagen}
-          alt="navegacion"
+          alt={`imagen de ${titulo}`}
           width={550}
           height={450}
         />

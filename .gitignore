@@ -25,3 +25,5 @@ node_modules/
 
 api.rest
 data.db
+
+frontend\.env.local

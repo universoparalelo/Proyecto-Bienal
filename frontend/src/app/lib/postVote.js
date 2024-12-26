@@ -38,7 +38,6 @@ export async function postVoteUserRegister(data){
   const correoId = await crearCorreo(email);
   data.email = correoId;
 
-  console.log(data);
 
   const response = await fetch(`${API_URL}/api/votos`, {
     method: "POST",
@@ -89,7 +88,6 @@ async function crearCorreo(email){
   const datos = await response.json();
   if (datos){
     console.log("Correo creado")
-    console.log(datos);
   }
   return datos.data.documentId;
 }
@@ -99,7 +97,6 @@ async function chequearCorreo(email){
   if (response){
     return null;
   } else {
-    console.log(response.data);
     return response.data[0].documentId;
   }
 }

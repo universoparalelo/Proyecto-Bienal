@@ -27,7 +27,6 @@ export async function createToken(token, escultura){
 export async function getToken(escultura){
     const response = await query(`tokens?filters[escultura][$eq]=${escultura}`);
     if (response.data.length > 0){
-        console.log(response.data);
         return response.data[0];
     }
 }

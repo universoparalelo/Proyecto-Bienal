@@ -8,7 +8,7 @@ export default function ImgPredio({ titulo, imagen, dimensions }) {
       <Image
         className="predio__imagen"
         src={imagen}
-        alt={titulo}
+        alt="imagen del predio"
         width={dimensions}
         height={dimensions}
       />

@@ -82,12 +82,7 @@
 
 @media (max-width: 768px) {
   .calendarContainer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 2rem 0;
-    max-width: 500px;
+    max-width: 200px;
   }
   
 }
