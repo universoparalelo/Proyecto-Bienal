@@ -28,3 +28,5 @@ data.db
 
 frontend/.env.local
 backend/.env
+api.rest
+data.db
